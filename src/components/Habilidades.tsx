@@ -66,6 +66,10 @@ const opcoes = [
     src_imagem: "tecnologias/GitHub.png"
   },
   {
+    titulo: "Azure",
+    src_imagem: "tecnologias/Azure.png"
+  },
+  {
     titulo: "HTML",
     src_imagem: "tecnologias/HTML5.png"
   },
