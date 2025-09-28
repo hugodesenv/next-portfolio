@@ -19,17 +19,6 @@
   flex: 1;
 }
 
-button {
-  border: none;
-  color: black;
-  border-radius: 5px;
-  border: 2px solid black;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-
 .menus button:hover {
   transition: 0.3s;
   border: 2px solid rgb(181, 181, 181);

@@ -47,8 +47,8 @@ export const Header = () => {
           <li style={style.posicao}>
             <label>Fullstack developer</label>
           </li>
-          <li style={style.autor}>
-            <label>{autor}</label>
+          <li>
+            <label style={style.autor}>{autor}</label>
           </li>
         </ul>
       </li>
@@ -58,8 +58,9 @@ export const Header = () => {
 
 const style = {
   autor: {
-    fontSize: '30px',
-    fontFamily: "Arial",
+    fontSize: '40px',
+    fontFamily: "Georgia",
+    fontWeight: "bold",
   },
   lista: { width: '100%' },
   conjunto: {

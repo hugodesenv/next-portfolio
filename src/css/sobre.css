@@ -53,6 +53,7 @@
 }
 
 @media (max-width: 768px) {
+
   /** forçar a foto sumir */
   .sobre-foto {
     display: none;

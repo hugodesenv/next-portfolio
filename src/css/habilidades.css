@@ -1,0 +1,37 @@
+.habilidades-titulo {
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  width: 100%;
+  padding: 2px;
+  border-top: 2px solid;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.habilidades {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.habilidades-opcao {
+  border: 2px solid rgba(201, 201, 201, 0.418);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  align-items: center;
+  background-color: rgb(243, 243, 243);
+  min-width: 100px; 
+}
+
+.habilidades span {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.habilidades img {
+  width: 40px;
+}

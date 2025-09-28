@@ -12,7 +12,7 @@ export const Menu = () => {
         opcoes.map(opcao => {
           return (
             <li key={opcao.src}>
-              <button onClick={(e) => handleClick(e, opcao.link)}>
+              <button onClick={(e) => handleClick(e, opcao.link)} >
                 <img style={{ width: '20px' }} src={opcao.src} />
                 <span>{opcao.titulo}</span>
               </button>

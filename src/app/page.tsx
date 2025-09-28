@@ -15,10 +15,10 @@ export default function Home() {
         <Spacer tamanho={10} />
         <Menu />
         <Sobre />
-        <Spacer tamanho={20} />
-        <LocalTrabalhado />
         <Spacer tamanho={10} />
         <Habilidades />
+        <Spacer tamanho={30} />
+        <LocalTrabalhado />
         <Spacer tamanho={30} />
         <Rodape />
       </Pagina>

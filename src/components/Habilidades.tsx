@@ -1,90 +1,112 @@
-import { CSSProperties } from "react";
-import { Dropdown } from "./Dropdown"
+import '../css/habilidades.css';
 
 export const Habilidades = () => {
   return (
-    <Dropdown abrir={false} titulo="Habilidades">
-      <div style={style.corpo}>
+    <>
+      <div className='habilidades-titulo'>Habilidades/Ferramentas</div>
+      <div className='habilidades'>
         {
-          opcoes.map(({ titulo, opcoes }) => {
+          opcoes.map(({ src_imagem, titulo }) => {
             return (
-              <section key={titulo}>
-                <h2 style={style.titulo}>{titulo}</h2>
-                <ul>
-                  {opcoes.map((s, index) => <li key={`${titulo}${index}`}>{s}</li>)}
-                </ul>
-              </section>
+              <ul className='habilidades-opcao' key={src_imagem}>
+                <li>
+                  <img src={src_imagem} />
+                </li>
+                <li>
+                  <span>{titulo}</span>
+                </li>
+              </ul>
             )
           })
         }
       </div>
-    </Dropdown>
+    </>
   )
-}
-
-interface IOpcao {
-  titulo: string;
-  opcoes: string[]
 }
 
 const opcoes = [
   {
-    titulo: 'Backend',
-    opcoes: [
-      'Fastify e NestJS (TypeScript, JWT, Knex, Sockets, TypeORM)',
-      'GraphQL e documentação com Swagger',
-      'Domain-Driven Design (DDD)',
-      'Docker'
-    ]
+    titulo: "Fastify",
+    src_imagem: "tecnologias/Fastify.png"
   },
   {
-    titulo: 'Frontend',
-    opcoes: [
-      'React.js e Next.js',
-      'Consumo de APIs (Axios)',
-      'Criação de componentes reutilizáveis',
-      'TypeScript, HTML e CSS'
-    ]
+    titulo: "Nest Js",
+    src_imagem: "tecnologias/Nest.js.png"
   },
   {
-    titulo: 'Mobile',
-    opcoes: [
-      'Flutter (BloC, Provider, Sockets, HTTP requests)'
-    ]
+    titulo: "Typescript",
+    src_imagem: "tecnologias/TypeScript.png"
   },
   {
-    titulo: 'Banco de dados',
-    opcoes: [
-      'PostgreSQL, Supabase, MongoDB, Firebase, Firebird, SQL Server, MySQL'
-    ]
+    titulo: "GraphQL",
+    src_imagem: "tecnologias/GraphQL.png"
   },
   {
-    titulo: 'Outros',
-    opcoes: [
-      'Git (controle de versão)',
-      'Integrações bancárias (Itaú, Santander)',
-      'N8N (automações e integração com IA)'
-    ]
+    titulo: "Next.js",
+    src_imagem: "tecnologias/Next.js.png"
   },
   {
-    titulo: 'Projetos relevantes',
-    opcoes: [
-      'Sistema web de gestão financeira (Next.js + Express)',
-      'Automação com N8N para suporte a clientes e equipe interna',
-      'Integrações financeiras via APIs bancárias',
-      'Aplicativo de conferência de estoque em Flutter integrado ao ERP',
-      'API ERP desenvolvida em Fastify + TypeScript'
-    ]
+    titulo: "Swagger",
+    src_imagem: "tecnologias/Swagger.png"
+  },
+  {
+    titulo: "Flutter",
+    src_imagem: "tecnologias/Flutter.png"
+  },
+  {
+    titulo: "Docker",
+    src_imagem: "tecnologias/Docker.png"
+  },
+  {
+    titulo: "N8N",
+    src_imagem: "tecnologias/n8n-color.png"
+  },
+  {
+    titulo: "Github",
+    src_imagem: "tecnologias/GitHub.png"
+  },
+  {
+    titulo: "HTML",
+    src_imagem: "tecnologias/HTML5.png"
+  },
+  {
+    titulo: "CSS3",
+    src_imagem: "tecnologias/CSS3.png"
+  },
+  {
+    titulo: "Antdesign",
+    src_imagem: "tecnologias/Ant Design.png"
+  },
+  {
+    titulo: "Tailwind CSS",
+    src_imagem: "tecnologias/Tailwind CSS.png"
+  },
+  {
+    titulo: "Material",
+    src_imagem: "tecnologias/Material UI.png"
+  },
+  {
+    titulo: "Postgres 12",
+    src_imagem: "tecnologias/PostgresSQL.png"
+  },
+  {
+    titulo: "SQLServer",
+    src_imagem: "tecnologias/Microsoft SQL Server.png"
+  },
+  {
+    titulo: "MySQL",
+    src_imagem: "tecnologias/MySQL.png"
+  },
+  {
+    titulo: "Firebase",
+    src_imagem: "tecnologias/Firebase.png"
+  },
+  {
+    titulo: "Postman",
+    src_imagem: "tecnologias/Postman.png"
+  },
+  {
+    titulo: "Jira",
+    src_imagem: "tecnologias/Jira.png"
   }
-] as IOpcao[];
-
-const style = {
-  corpo: {
-    display: 'flex',
-    gap: '15px',
-    flexDirection: 'column'
-  },
-  titulo: {
-    fontWeight: 'bold'
-  }
-} as Record<string, CSSProperties>
+] as { titulo: string; src_imagem: string }[];
