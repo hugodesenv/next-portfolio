@@ -1,6 +1,41 @@
-import { CSSProperties } from "react"
+'use client';
+import { CSSProperties, useEffect, useState } from "react"
 
 export const Header = () => {
+  const autorFinal = 'HUGO SOUZA';
+  const [autor, setAutor] = useState("|");
+
+  useEffect(() => {
+    escreverAutor();
+  }, []);
+
+  async function sleep() {
+    await new Promise((resolver) => setTimeout(resolver, 300));
+  }
+
+  async function escreverAutor() {
+    let autorMontagem = "";
+
+    for (let i = 0; i < autorFinal.length; i++) {
+      autorMontagem = `${autorMontagem}${autorFinal[i]}`;
+      await sleep();
+      setAutor(autorMontagem);
+    }
+
+    piscarCursorAutor();
+  }
+
+  function piscarCursorAutor() {
+    setTimeout(() => {
+      setAutor((prev) =>
+        prev.endsWith("|")
+          ? autorFinal
+          : `${autorFinal} |`
+      );
+      piscarCursorAutor();
+    }, 600);
+  }
+
   return (
     <ul style={style.conjunto}>
       <li style={style.lista}>
@@ -13,7 +48,7 @@ export const Header = () => {
             <label>Fullstack developer</label>
           </li>
           <li style={style.autor}>
-            <label>HUGO SOUZA</label>
+            <label>{autor}</label>
           </li>
         </ul>
       </li>
