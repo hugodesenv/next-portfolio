@@ -31,9 +31,8 @@ button {
 }
 
 .menus button:hover {
-  background-color: rgb(222, 222, 222);
   transition: 0.3s;
-  border: 2px solid rgb(151, 151, 151);
+  border: 2px solid rgb(181, 181, 181);
 }
 
 .menus button {
@@ -43,4 +42,16 @@ button {
   gap: 10px;
   padding-left: 10px;
   font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .menus {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menus li {
+    margin: 0px;
+  }
 }

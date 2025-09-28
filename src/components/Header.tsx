@@ -23,9 +23,8 @@ export const Header = () => {
 
 const style = {
   autor: {
-    fontSize: '60px',
-    fontFamily: "fantasy",
-    textAlign: "center",
+    fontSize: '30px',
+    fontFamily: "Arial",
   },
   lista: { width: '100%' },
   conjunto: {

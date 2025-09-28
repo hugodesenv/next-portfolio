@@ -1,0 +1,64 @@
+.sobre-corpo {
+  display: flex;
+  gap: 10px;
+}
+
+.sobre-foto {
+  border-radius: 10px;
+  width: 200px;
+}
+
+.sobre-corpo-sobre {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.sobre-titulo {
+  font-weight: bold;
+}
+
+.sobre-texto {
+  width: 100%;
+  margin-top: 5px;
+}
+
+.sobre-lista {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.sobre-lista>li {
+  flex: 1;
+}
+
+.sobre-lista li ul {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+
+.sobre-lista li ul li {
+  width: 100%;
+  padding-right: 30px;
+  flex-wrap: wrap;
+}
+
+.sobre-lista li ul li:last-child {
+  padding-right: 0;
+}
+
+@media (max-width: 768px) {
+  /** forçar a foto sumir */
+  .sobre-foto {
+    display: none;
+  }
+
+  .sobre-lista ul {
+    flex-direction: column;
+  }
+}

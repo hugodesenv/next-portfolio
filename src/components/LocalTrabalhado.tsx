@@ -1,6 +1,5 @@
 import { ReactNode } from "react";
 import { Dropdown } from "./Dropdown";
-import { Spacer } from "./Spacer";
 
 export const LocalTrabalhado = () => {
   return <>
