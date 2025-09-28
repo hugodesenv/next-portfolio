@@ -17,14 +17,11 @@
 }
 
 .habilidades-opcao {
-  border: 2px solid rgba(201, 201, 201, 0.418);
   padding: 10px;
   display: flex;
   flex-direction: column;
-  border-radius: 10px;
   align-items: center;
-  background-color: rgb(243, 243, 243);
-  min-width: 100px; 
+  min-width: 100px;
 }
 
 .habilidades span {
