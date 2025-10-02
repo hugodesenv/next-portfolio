@@ -1,24 +1,5 @@
 @import 'tailwindcss';
 
-:root {
-  --background: #ffffff;
-  --foreground: #393939;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #ffffff;
-    --foreground: #4b4b4b;
-  }
-}
-
 * {
   margin: 0px;
   padding: 0px;
@@ -27,7 +8,7 @@
 
 html,
 body {
-  background: var(--background);
+  background: #eaeaea;
   margin: 0px;
   padding: 0px;
   text-align: justify;
